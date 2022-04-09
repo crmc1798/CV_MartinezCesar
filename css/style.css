@@ -1,0 +1,564 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "section"
+        "footer";
+}
+
+/*inicio Header*/
+.main-header {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ffffff;
+    align-content: space-around;
+    justify-content: space-between;
+    height: 5rem;
+    color: #101010;
+    width: auto;
+    opacity: 0.9;
+    grid-area: header;
+}
+
+.logo {
+    margin-left: 5rem;
+}
+
+.menu {
+    margin-right: 5rem;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li a {
+    color: #101010;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+nav li a:hover {
+    color: #ffffff;
+    background-color: #4774b6;
+}
+/*Fin Header*/
+
+
+/*Inicio Footer*/
+.menu1 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-footer {
+    display: flex;
+    flex-flow: row wrap;
+    color: #101010;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    opacity: 60%;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    bottom: 0;
+    grid-area: footer;
+}
+
+.menu1 ul li {
+    margin: 0.3rem;
+}
+
+.c1 .ing {
+    font-size: 2rem;
+}
+
+.c1 p {
+    font-size: 1rem;
+}
+
+.c11 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.autor {
+    font-size: 1rem;
+}
+
+.menu1 {
+    font-size: 1rem;
+    margin-right: 5rem;
+}
+
+.c1 {
+    margin-left: 5rem;
+}
+/*Fin Footer*/
+
+/*Inicio pagina Sobre mí*/
+.main-section {
+    background-color: #f6f6f6;
+    grid-area: section;
+}
+
+.portada1 {
+    margin: 0;
+    padding: 0;
+}
+
+.portada {
+    width: 100%;
+}
+
+.sobremi {
+    background-color: #EBF0F7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.sobremi1 {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5rem 5rem 5rem 5rem;
+    padding: 4rem;
+    background-color: #f0f0f0;
+    color: #101010;
+    text-align: justify;
+    align-content: space-between;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+.sobremi1 h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 4rem;
+}
+
+.sobremi1 h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.sobremi1 p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem;
+}
+/*Fin pagina Sobre mi*/
+
+/*Inicio de pagina Formacion*/
+.titulo {
+    font-size: 5rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+        "tarjeta1 tarjeta2 tarjeta3";
+}
+
+.fototarjeta {
+    width: 20rem;
+}
+
+.tarjeta1 {
+    grid-area: tarjeta1;
+    padding: 2rem;
+    width: 22rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+.tarjeta2 {
+    grid-area: tarjeta2;
+    padding: 2rem;
+    width: 22rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+.tarjeta3 {
+    grid-area: tarjeta3;
+    padding: 2rem;
+    width: 22rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+.tarjeta1:hover {
+    transform: scale(1.1);
+}
+
+.tarjeta2:hover {
+    transform: scale(1.1);
+}
+
+.tarjeta3:hover {
+    transform: scale(1.1);
+}
+
+.textotarjeta {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.textotarjeta h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.textotarjeta h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.textotarjeta p {
+    font-size: 20px;
+    text-align: justify;
+}
+/*Fin de pagina Formacion*/
+
+/*Inicio de pagina Experiencia*/
+.tarjetasH {
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+        "tarjetaH1 tarjetaH2 tarjetaH3";
+}
+
+.fototarjetaH {
+    width: 25rem;
+}
+
+.tarjetaH1:hover {
+    transform: scale(1.1);
+}
+
+.tarjetaH2:hover {
+    transform: scale(1.1);
+}
+
+.tarjetaH3:hover {
+    transform: scale(1.1);
+}
+
+.tarjetaH1 {
+    padding: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+.tarjetaH2 {
+    padding: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+.tarjetaH3 {
+    padding: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+/*Fin de pagina Experiencia*/
+
+/*Inicio de pagina Aptitudes*/
+.contenedorA {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+        "tarjetaA tarjetaA ";
+
+}
+
+.tarjetaA1 {
+    margin: 2rem;
+    padding: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    text-align: justify;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+.tarjetaA2 {
+    margin: 2rem;
+    padding: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    text-align: justify;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+.tarjetaA1:hover {
+    transform: scale(1.1);
+}
+
+.tarjetaA2:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: circle;
+    padding: 30px;
+}
+/*Fin de pagina Aptitudes*/
+
+/*Inicio de pagina Contacto*/
+.formulario {
+    background-color: #f0f0f0;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 30rem;
+    height: 20rem;
+    justify-content: space-between;
+}
+
+.tunombre {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.tucorreo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.tucomentario {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.enviar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+}
+
+.enviarB {
+    width: 15rem;
+}
+
+.CV {
+    margin: 3rem;
+}
+
+.enviarCV {
+    width: 15rem;
+    height: 3rem;
+}
+
+.mapa {
+    margin: 3rem;
+}
+
+#Tu_comentario,
+#Tu_correo,
+#Nombre {
+    width: 15rem;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0px 0px 5px 1px #848485;
+}
+/*Fin de pagina contacto*/
+
+
+/*Ajuste para mobile*/
+@media(max-width:800px) {
+
+    /*Inicio Header*/
+    .main-header {
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+        height: auto;
+        color: #101010;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-right: 0;
+    }
+
+    .menu ul {
+        justify-content: center;
+    }
+
+    nav li a {
+        font-size: .9rem;
+        padding: .3rem;
+    }
+    /*Fin Header*/
+
+    /*Inicio pagina Sobre mí*/
+    .sobremi1 {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .sobremi1 h2 {
+        font-size: 1.5rem;
+        margin: 0.2rem;
+    }
+
+    .sobremi1 h3 {
+        font-size: 1.3rem;
+        margin: 0.5rem;
+    }
+
+    .sobremi1 p {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+    /*Fin pagina Sobre mi*/
+
+    /*Inicio Footer*/
+    .c1 .ing {
+        font-size: 1rem;
+    }
+
+    .c1 p {
+        font-size: 1rem;
+    }
+
+
+    .autor {
+        font-size: 0.6rem;
+    }
+
+    .menu1 {
+        margin-right: 1rem;
+    }
+
+    .c1 {
+        margin-left: 1rem;
+    }
+    /*Fin Footer*/
+
+    /*Inicio de pagina Formacion*/
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .tarjetas {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            "tarjeta1"
+            "tarjeta2"
+            "tarjeta3";
+    }
+    /*Fin de pagina Formacion*/
+
+    /*Inicio de pagina Experiencia*/
+    .tarjetasH {
+        padding: 1rem;
+        margin: 1rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-areas:
+            "tarjetaH1"
+            "tarjetaH2"
+            "tarjetaH3";
+    }
+    /*Fin de pagina Experiencia*/
+
+    /*Inicio de pagina Aptitudes*/
+    .contenedorA {
+        padding: 2rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-areas:
+            "tarjetaA "
+            "tarjetaA";
+
+    }
+    /*Fin de pagina Aptitudes*/
+
+}
